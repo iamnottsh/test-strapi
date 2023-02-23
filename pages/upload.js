@@ -2,7 +2,7 @@ import React from "react";
 import Uploadforum from "./Components/Uploadforum";
 import { getSession, useSession } from 'next-auth/react'
 
-function upload() {
+function Upload() {
   const { data: session } = useSession();
   return (
     <div>
@@ -25,4 +25,4 @@ export async function getServerSideProps(context) {
     }
   }
 }
-export default upload;
+export default Upload;
